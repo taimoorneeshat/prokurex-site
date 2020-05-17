@@ -1,0 +1,42 @@
+tagline: Does office managment take up your time?
+title: Try Prokurex for your office
+description: Fill in the form and lets have a meeting to make your procurement cost efficient, time saving and hassle-free.
+fields:
+  - name: name
+    type: text
+    label: Full Name
+  - name: company
+    type: text
+    label: Company Name
+  - name: email
+    type: email
+    label: Email Address
+  - name: phone
+    type: tel
+    label: Phone Number
+  - name: employee-count
+    type: select
+    label: Number of Employees
+    options:
+      - value: one-plus
+        text: 1-9 Employees
+      - value: ten-plus
+        text: 10-24 Employees
+      - value: twentyfive-plus
+        text: 25-49 Employees
+      - value: fifty-plus
+        text: 50-99 Employees
+      - value: hundred-plus
+        text: 100-199 Employees
+      - value: twohundred-plus
+        text: 200+ Employees
+  - name: city
+    type: select
+    label: City
+    options:
+      - value: karachi
+        text: Karachi
+      - value: lahore
+        text: Lahore
+      - value: islamabad
+        text: Islamabad
