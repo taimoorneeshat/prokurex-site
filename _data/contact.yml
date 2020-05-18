@@ -1,6 +1,9 @@
 tagline: Does office managment take up your time?
 title: Try Prokurex for your office
 description: Fill in the form and lets have a meeting to make your procurement cost efficient, time saving and hassle-free.
+submit: Submit
+success-header: Thank you for your interest!
+success-message: We will get back to you soon.
 fields:
   - name: name
     type: text

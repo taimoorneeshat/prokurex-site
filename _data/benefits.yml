@@ -1,16 +1,19 @@
-- header: The ONLY procurement partner you’ll ever need
+- header: The only procurement partner you’ll ever need
+  reverse: false
   image: /images/benefits/office-supplies.png
   pointers:
     - text: All your office supplies under one roof
     - text: No need to manage multiple vendors
     - text: Spend less time placing orders and managing vendors
 - header: Achieve greater visbility into your company’s spend
+  reverse: true
   image: /images/benefits/track-spending.png
   pointers:
     - text: Auto generated monthly spend reports
     - text: Track purchases accros your organization
     - text: Achieve greater budget control through transparent spending
 - header: Save time and money and focus on what matters
+  reverse: false
   image: /images/benefits/office-supplies.png
   pointers:
     - text: Remove opportunities for error or fraud

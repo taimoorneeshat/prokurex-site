@@ -2079,12 +2079,9 @@ i {
   color: #30ae96 !important;
 }
 
-.contact {
-  margin: 100px 0;
-  width: 100%;
-  height: 512px;
+#contact {
   display: flex;
-  align-items: center;
+  z-index: -2;
 }
 
 .contact-background {
@@ -2107,8 +2104,7 @@ i {
 }
 
 .contact-form-container {
-  background-color: white;
-  opacity: 0.9;
+  opacity: 0.95;
   border-radius: 50px;
   padding: 25px;
 }
@@ -2133,10 +2129,6 @@ i {
 .step-marker {
   background-color: #545863;
   border-radius: 1rem;
-}
-
-.step-number {
-  color: white;
 }
 
 .step-icon-container {
