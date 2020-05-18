@@ -1,33 +1,41 @@
-- number: 01
-  title: Signup
-  icon: /images/process/hand-shake.png
-  description: >
-    Answer a few simple questions in a brief meeting
-    that helps us understand your office needs.
-- number: 02
-  title: Request
-  icon: /images/process/checklist.png
-  description: >
-    Anyone in your team can order a list of
-    items using our dedicated communication channels.
-- number: 03
-  title: Pay
-  icon: /images/process/debit-card.png
-  description: >
-    Once the order has been confirmed, the
-    customer receives an invoice for the order.
-- number: 04
-  title: Recieve
-  icon: /images/process/parcel.png
-  description: >
-    Enjoy the comfort of receiving your order
-    within a week of payment made without
-    any vendor issues or hassles
-- number: 05
-  title: Track
-  icon: /images/process/reports.png
-  description: >
-    No need to waste time on creating monthly
-    business spend reports. All the data & insights
-    you need to improve your business spend, we
-    do it for you.
+title: How it Works
+description: Welcome to a new way of managing your office
+steps:
+  - number: 01
+    reverse: false
+    title: Signup
+    icon: /images/process/hand-shake.png
+    description: >
+      Answer a few simple questions in a brief meeting
+      that helps us understand your office needs.
+  - number: 02
+    reverse: true
+    title: Request
+    icon: /images/process/checklist.png
+    description: >
+      Anyone in your team can order a list of
+      items using our dedicated communication channels.
+  - number: 03
+    reverse: false
+    title: Pay
+    icon: /images/process/debit-card.png
+    description: >
+      Once the order has been confirmed, the
+      customer receives an invoice for the order.
+  - number: 04
+    reverse: true
+    title: Recieve
+    icon: /images/process/parcel.png
+    description: >
+      Enjoy the comfort of receiving your order
+      within a week of payment made without
+      any vendor issues or hassles
+  - number: 05
+    reverse: false
+    title: Track
+    icon: /images/process/reports.png
+    description: >
+      No need to waste time on creating monthly
+      business spend reports. All the data & insights
+      you need to improve your business spend, we
+      do it for you.

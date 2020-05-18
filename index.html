@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<!--====================================
-=            Hero Section            =
-=====================================-->
 <section class="section gradient-banner">
 	<div class="shapes-container">
 		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
@@ -27,45 +24,49 @@ layout: default
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-8 order-2 order-md-1 text-center text-md-center mx-auto">
-				<h1 class="text-white font-weight-bold mb-4">Business Spend Made Easy</h1>
-				<p class="text-white mb-5">Control the purchasing process, reduce manual work and have transparency over your organizations spending with a simple digital procurement solution.</p>
-				<a href="#" class="btn btn-main">Try for Free</a>
+				<h1 class="text-white font-weight-bold mb-4">{{ site.data.intro.tagline }}</h1>
+				<p class="text-white mb-5">{{ site.data.intro.description }}</p>
+				<a href="#" class="btn btn-main">{{ site.data.intro.cta }}</a>
 			</div>
 		</div>
 	</div>
 </section>
-<!--====  End of Hero Section  ====-->
 
 <section class="section pt-0 position-relative pull-top">
 	<div class="container">
 		<div class="rounded shadow p-5 bg-white">
 			<div class="row">
-				<div class="col-md-4 mb-4 mb-md-0 text-center">
-					<i class="ti-paint-bucket h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">themes made easy</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-				</div>
-				<div class="col-md-4 mb-4 mb-md-0 text-center">
-					<i class="ti-shine h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">powerful design</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-				</div>
-				<div class="col-md-4 mb-4 mb-md-0 text-center">
-					<i class="ti-thought h1"></i>
-					<h3 class="mt-4 text-capitalize h5 ">creative content</h3>
-					<p class="regular text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam non, recusandae
-						tempore ipsam dignissimos molestias.</p>
-					</p>
-				</div>
+				{% for feature in site.data.intro.features %}
+					<div class="col-md-3 mb-4 mb-md-0 text-center">
+						<img src="{{ feature.icon | prepend: site.baseurl }}"/>
+						<h5 class="mt-4 text-capitalize h5">{{ feature.title }}</h5>
+					</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
 </section>
 
-
-
+<section  id="process" class="container my-5">
+	<h2 class="text-center">{{ site.data.process.title }}</h2>
+	<p class="text-center">{{ site.data.process.description }}</p>
+	{% for step in site.data.process.steps %}
+	<div class="step-container row justify-content-center my-3 {% if step.reverse %} flex-row-reverse {% endif %}">
+		<div class="col-md-4 mx-5 p-5 d-flex">
+			<div class="step-marker my-auto d-flex flex-grow-1 align-items-center">
+				<span class="step-number p-3">0{{ step.number }}</span>
+				<div class="step-icon-container d-inline-flex flex-grow-1 align-items-center">
+					<img class="step-icon mx-auto" src="{{ step.icon | prepend: site.baseurl }}"/>
+				</div>
+			</div>
+		</div>
+		<div class="step-content mx-5 p-5 col-md-4 text-left">
+			<h3 class="step-title">{{ step.title }}</h3>
+			<p class="step-description">{{ step.description }}</p>
+		</div>
+	</div>
+	{% endfor %}
+</section>
 
 <!--==================================
 =            Feature Grid            =
@@ -76,7 +77,7 @@ layout: default
 			<div class="col-lg-6 ml-auto justify-content-center">
 				<!-- Feature Mockup -->
 				<div class="image-content" data-aos="fade-right">
-					<img class="img-fluid" src="images/office-supplies.png" alt="iphone">
+					<img class="img-fluid" src="images/benefits/office-supplies.png" alt="iphone">
 				</div>
 			</div>
 			<div class="col-lg-6 mr-auto align-self-center">
@@ -88,19 +89,6 @@ layout: default
 					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex ea commodo consequat.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -120,24 +108,11 @@ layout: default
 						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
 						ea commodo consequat.</p>
 				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
-				</div>
 			</div>
 			<div class="col-lg-6 mr-auto justify-content-center">
 				<!-- Feature mockup -->
 				<div class="image-content" style="text-align: right;" data-aos="fade-left">
-					<img class="img-fluid" src="images/track-spending.png" alt="ipad">
+					<img class="img-fluid" src="images/benefits/track-spending.png" alt="ipad">
 				</div>
 			</div>
 		</div>
@@ -150,7 +125,7 @@ layout: default
 			<div class="col-lg-6 ml-auto justify-content-center">
 				<!-- Feature Mockup -->
 				<div class="image-content" data-aos="fade-right">
-					<img class="img-fluid" src="images/save-time.png" alt="iphone">
+					<img class="img-fluid" src="images/benefits/save-time.png" alt="iphone">
 				</div>
 			</div>
 			<div class="col-lg-6 mr-auto align-self-center">
@@ -162,19 +137,6 @@ layout: default
 					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex ea commodo consequat.</p>
-				</div>
-				<!-- Testimonial Quote -->
-				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
 				</div>
 			</div>
 		</div>
