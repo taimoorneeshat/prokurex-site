@@ -53,8 +53,8 @@ layout: default
 	<p class="text-center">{{ site.data.process.description }}</p>
 	{% for step in site.data.process.steps %}
 	<div class="step-container row justify-content-center my-3 {% if step.reverse %} flex-row-reverse {% endif %}">
-		<div class="col-md-4 mx-5 p-5 d-flex">
-			<div class="step-marker my-auto d-flex flex-grow-1 align-items-center">
+		<div class="col-md-4 mx-5 p-5 d-flex"  data-aos="{% if step.reverse %}fade-left{% else %}fade-right{% endif %}">
+			<div class="step-marker my-auto d-flex flex-grow-1 align-items-center shadow">
 				<span class="step-number p-3 text-white">0{{ step.number }}</span>
 				<div class="step-icon-container d-inline-flex flex-grow-1 align-items-center">
 					<img class="step-icon mx-auto" src="{{ step.icon | prepend: site.baseurl }}"/>
@@ -120,17 +120,3 @@ layout: default
 	</div>
 	<div class="contact-background"></div>
 </section>
-
-<!-- JAVASCRIPTS: Tried moving this into head with defer but for some reason they stop working -->
-<script src="plugins/jquery/jquery.js"></script>
-<script src="plugins/popper/popper.min.js"></script>
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-<script src="plugins/aos/aos.js"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
-<script src="plugins/google-map/gmap.js"></script>
-
-<script src="js/custom.js"></script>

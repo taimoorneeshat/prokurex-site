@@ -6,30 +6,22 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ '/favicon.ico' || prepend: site.baseurl }}" type="image/x-icon">
+  <link rel="icon" href="{{ '/favicon.ico' || prepend: site.baseurl }}" type="image/x-icon">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!-- PLUGINS CSS STYLE -->
-  <!-- Bootstrap <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
-  <!-- themify icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <!-- Owl Carousel -->
-  <link href="plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
-  <!-- Owl Carousel Theme -->
-  <link href="plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
-  <!-- Fancy Box -->
-  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
-  <!-- AOS -->
-  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}">
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+
+  <script src="https://kit.fontawesome.com/ce4ee89a3b.js" crossorigin="anonymous"></script>
 </head>
