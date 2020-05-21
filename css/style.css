@@ -2111,30 +2111,40 @@ i {
   padding: 25px;
 }
 
-.step-container {
-  position: relative;
-}
+/* process */
 
-.step-container::before {
-  content: url('../images/process/arrow-right.png');
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 1rem;
-  width: 1rem;
-  display: block;
-  margin: 0 auto;
-  background-size: cover;
-  transform: translate(-100%, -100%);
-}
+@media only screen and (min-width: 768px) {
+  .step-container {
+    position: relative;
+  }
+  
+  .step-container::before {
+    content: url('../images/process/arrow-right.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1rem;
+    width: 1rem;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    transform: translate(-100%, -100%);
+  }
 
-.reverse::before {
-  content: url('../images/process/arrow-left.png');
+  .reverse::before {
+    content: url('../images/process/arrow-left.png');
+  }
 }
 
 .step-marker {
   background-color: #545863;
   border-radius: 1rem;
+  margin: auto 0;
+}
+
+.step-number {
+  padding: 0 1rem;
+  color: white;
 }
 
 .step-icon-container {
@@ -2142,4 +2152,11 @@ i {
   background-color: white;
   border-bottom-right-radius: inherit;
   border-top-right-radius: inherit;
+}
+
+.step-icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
