@@ -1929,10 +1929,6 @@ a:focus, a:hover {
   background-image: linear-gradient(45deg, #00b359 0%, #30ae96 20%, #02473b 50%);
 }
 
-.pull-top {
-  margin-top: -120px;
-}
-
 .shapes-container {
   position: absolute;
   overflow: hidden;
@@ -2109,6 +2105,18 @@ i {
   opacity: 0.95;
   border-radius: 50px;
   padding: 25px;
+}
+
+/* intro */
+
+#features {
+  position: relative;
+  margin-top: -100px;
+  padding-bottom: 3rem;
+}
+
+#features .row {
+  border-radius: 1rem;
 }
 
 /* process */
