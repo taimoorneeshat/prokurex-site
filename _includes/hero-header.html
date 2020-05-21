@@ -1,0 +1,50 @@
+<header class="section gradient-banner pt-0">
+	<div class="shapes-container">
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+		<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
+		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
+		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+		<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
+		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
+		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand p-3">
+      <div class="container">
+        <a class="navbar-brand text-white" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              {% for item in site.data.nav %}
+              <li class="nav-item {% if page.url == item.url %} active {% endif %}">
+                  <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }} {% if page.url == item.url %} <span class="sr-only">(current)</span> {% endif %}</a>
+              </li>
+              {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+	<div class="container pt-3 mt-3">
+		<div class="row align-items-center">
+			<div class="col-md-10 order-2 order-md-1 mx-auto">
+				<h1 class="text-white font-weight-bold mb-4">{{ site.data.intro.tagline }}</h1>
+				<p class="text-white mb-5">{{ site.data.intro.description }}</p>
+				<a href="#contact" class="btn btn-primary btn-lg" role="button">{{ site.data.intro.cta }}</a>
+			</div>
+		</div>
+	</div>
+</header>

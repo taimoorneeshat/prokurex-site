@@ -2,39 +2,9 @@
 layout: default
 ---
 
-<section class="section gradient-banner">
-	<div class="shapes-container">
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
-		<div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
-		<div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
-	</div>
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-8 order-2 order-md-1 text-center text-md-center mx-auto">
-				<h1 class="text-white font-weight-bold mb-4">{{ site.data.intro.tagline }}</h1>
-				<p class="text-white mb-5">{{ site.data.intro.description }}</p>
-				<a href="#" class="btn btn-main">{{ site.data.intro.cta }}</a>
-			</div>
-		</div>
-	</div>
-</section>
-
 <section class="section pt-0 position-relative pull-top">
 	<div class="container">
-		<div class="rounded shadow p-5 bg-white">
+		<div class="rounded shadow py-4 px-5 bg-white">
 			<div class="row">
 				{% for feature in site.data.intro.features %}
 					<div class="col-md-3 mb-4 mb-md-0 text-center">
@@ -52,7 +22,7 @@ layout: default
 	<h2 class="text-center">{{ site.data.process.title }}</h2>
 	<p class="text-center">{{ site.data.process.description }}</p>
 	{% for step in site.data.process.steps %}
-	<div class="step-container row justify-content-center my-3 {% if step.reverse %} flex-row-reverse {% endif %}">
+	<div class="step-container row justify-content-center my-3 {% if step.reverse %} flex-row-reverse reverse {% endif %}">
 		<div class="col-md-4 mx-5 p-5 d-flex"  data-aos="{% if step.reverse %}fade-left{% else %}fade-right{% endif %}">
 			<div class="step-marker my-auto d-flex flex-grow-1 align-items-center shadow">
 				<span class="step-number p-3 text-white">0{{ step.number }}</span>
