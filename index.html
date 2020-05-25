@@ -42,14 +42,14 @@ layout: default
 	<div class="container">
 		{% for benefit in site.data.benefits %}
 		<div class="row align-items-center py-5 {% if benefit.reverse %} flex-row-reverse {% endif %}">
-			<div class="col-md-6 text-center" data-aos="{% if benefit.reverse %}fade-left{% else %}fade-right{% endif %}">
-				<img class="image-fluid" src="{{ benefit.image | prepend: site.baseurl }}"/>
-			</div>
-			<div class="col-md-6">
-				<h2 class="py-3">{{ benefit.header }}</h2>
+			<div class="col-md-6 py-3">
+				<h2 class="pb-2">{{ benefit.header }}</h2>
 				{% for pointer in benefit.pointers %}
-				<p class="py-1">{{ pointer.text }}</p>
+				<p>{{ pointer.text }}</p>
 				{% endfor %}
+			</div>
+			<div class="col-md-6 text-center" data-aos="{% if benefit.reverse %}fade-right{% else %}fade-left{% endif %}">
+				<img class="img-fluid" src="{{ benefit.image | prepend: site.baseurl }}"/>
 			</div>
 		</div>
 		{% endfor %}

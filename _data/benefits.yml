@@ -1,21 +1,33 @@
-- header: The only procurement partner you’ll ever need
+- header: Partner with the only vendor you will ever need # The only procurement partner you will ever need
   reverse: false
   image: /images/benefits/office-supplies.png
   pointers:
-    - text: All your office supplies under one roof
-    - text: No need to manage multiple vendors
-    - text: Spend less time placing orders and managing vendors
-- header: Achieve greater visbility into your company’s spend
+    - text: >
+        We are constantly striving to find the best quality of products at a fair price not just 
+        from local distributors but also from manufacturers around the world. So you never have to 
+        worry about requesting quotations from multiple vendors or be doubtful about the quality of 
+        products. Without aanyone from your team spending a single minute on bargaining you are 
+        guaranted to get the best price at all times.
+- header: Achieve greater visbility into your business spend
   reverse: true
   image: /images/benefits/track-spending.png
   pointers:
-    - text: Auto generated monthly spend reports
-    - text: Track purchases accros your organization
-    - text: Achieve greater budget control through transparent spending
-- header: Save time and money and focus on what matters
+    - text: >
+        We believe an organization can only succeed when it is completely aware of how it spends. 
+        Almost all organizations are well aware of their biggest purchases but it is the smaller 
+        recurring purchases that are difficult to track. And because of this difficulty they are 
+        often underestimated.
+        With our admin dashboard you can keep track ofeven the smallest purchase. Monthly reports 
+        provide you with a detailed analysis of how all the money gets spent.
+        Set budget on categories and organizational departments.
+        Track purchases accros your organization.
+        Achieve greater budget control through transparent spending
+- header: Create a more inspiring workspace for your team
   reverse: false
-  image: /images/benefits/office-supplies.png
+  image: /images/benefits/save-time.png
   pointers:
-    - text: Remove opportunities for error or fraud
-    - text: Reduce time wasting on manual tasks
-    - text: Streamline procurement process
+    - text: >
+        By making sure your office is always with the best tools out there, they are
+        are always ready to tackle any challenge that comes their way. Why let a broken stapler 
+        be a hinderance when it can be replaced with just a click of button or why let a craving 
+        pull you away from your work when you can have all the snacks you want already at your office.
