@@ -16,6 +16,24 @@ layout: default
 </section>
 
 
+<section id="benefits" class="py-5">
+	<div class="container">
+		{% for benefit in site.data.benefits %}
+		<div class="row align-items-center py-5 {% if benefit.reverse %} flex-row-reverse {% endif %}">
+			<div class="col-md-6 py-3">
+				<h2 class="pb-2">{{ benefit.header }}</h2>
+				{% for pointer in benefit.pointers %}
+				<p>{{ pointer.text }}</p>
+				{% endfor %}
+			</div>
+			<div class="col-md-6 text-center" data-aos="{% if benefit.reverse %}fade-right{% else %}fade-left{% endif %}">
+				<img class="img-fluid" src="{{ benefit.image | prepend: site.baseurl }}"/>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+
 <section  id="process" class="container py-5">
 	<h2 class="text-center">{{ site.data.process.title }}</h2>
 	<p class="text-center pb-3">{{ site.data.process.description }}</p>
@@ -37,34 +55,14 @@ layout: default
 	{% endfor %}
 </section>
 
-
-<section id="benefits" class="py-5 bg-white">
-	<div class="container">
-		{% for benefit in site.data.benefits %}
-		<div class="row align-items-center py-5 {% if benefit.reverse %} flex-row-reverse {% endif %}">
-			<div class="col-md-6 py-3">
-				<h2 class="pb-2">{{ benefit.header }}</h2>
-				{% for pointer in benefit.pointers %}
-				<p>{{ pointer.text }}</p>
-				{% endfor %}
-			</div>
-			<div class="col-md-6 text-center" data-aos="{% if benefit.reverse %}fade-right{% else %}fade-left{% endif %}">
-				<img class="img-fluid" src="{{ benefit.image | prepend: site.baseurl }}"/>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
-</section>
-
-
-<section id="contact" class="position-relative py-5 bg-white">
-	<div class="contact-content container d-flex p-0">
-		<h2 class="col-md-7 my-auto">
+<section id="contact">
+	<div class="contact-content container flex-md-row">
+		<h2 class="col-md-6 col-lg-5 py-3">
 			{{ site.data.contact.tagline }}
 		</h2>
-		<div class="contact-form-container col-md-5 mt-5 bg-light shadow">
+		<div class="contact-form-container col-md-6 col-lg-5 bg-light shadow">
 			<form class="contact-form">
-				<h3 class="bold-font">{{ site.data.contact.title }}</h3>
+				<h3>{{ site.data.contact.title }}</h3>
 				<p>{{ site.data.contact.description }}</p>
 				{% for field in site.data.contact.fields %}
 					{% if field.type == "text" or field.type == "email" or field.type == "tel" %}
@@ -78,7 +76,7 @@ layout: default
 						</select>
 					{% endif %}
 				{% endfor %}
-				<button class="btn btn-primary my-2" type="submit">{{ site.data.contact.submit }}</button>
+				<button class="btn btn-primary mt-2" type="submit">{{ site.data.contact.submit }}</button>
 			</form>
 			<div class="contact-message d-none">
 				<h3 class="text-center bold">{{ site.data.contact.success-header }}</h3>
