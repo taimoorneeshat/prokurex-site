@@ -61,7 +61,7 @@ layout: default
 			{{ site.data.contact.tagline }}
 		</h2>
 		<div class="contact-form-container col-md-6 col-lg-5 bg-light shadow">
-			<form class="contact-form">
+			<form class="contact-form" action="{{ site.data.contact.action }}">
 				<h3>{{ site.data.contact.title }}</h3>
 				<p>{{ site.data.contact.description }}</p>
 				{% for field in site.data.contact.fields %}

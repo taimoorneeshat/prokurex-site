@@ -4,42 +4,36 @@ description: Fill in the form and lets have a meeting to make your procurement c
 submit: Submit
 success-header: Thank you for your interest!
 success-message: We will get back to you soon.
+action: https://docs.google.com/forms/u/0/d/e/1FAIpQLSd9DVZRCJZ_IRWM12hC76zDuIL7oXLb1UhLMtx-96Jx_M1bDA/formResponse
 fields:
-  - name: name
+  - name: entry.1000267644
     type: text
     label: Full Name
-  - name: company
-    type: text
-    label: Company Name
-  - name: email
+  - name: entry.1459810976
     type: email
     label: Email Address
-  - name: phone
+  - name: entry.1865922753
     type: tel
     label: Phone Number
-  - name: employee-count
+  - name: entry.670297925
+    type: text
+    label: Company Name
+  - name: entry.1849708564
     type: select
     label: Number of Employees
     options:
-      - value: one-plus
+      - value: 1-9 Employees
         text: 1-9 Employees
-      - value: ten-plus
+      - value: 10-24 Employees
         text: 10-24 Employees
-      - value: twentyfive-plus
+      - value: 25-49 Employees
         text: 25-49 Employees
-      - value: fifty-plus
+      - value: 50-99 Employees
         text: 50-99 Employees
-      - value: hundred-plus
+      - value: 100-199 Employees
         text: 100-199 Employees
-      - value: twohundred-plus
+      - value: 200+ Employees
         text: 200+ Employees
-  - name: city
-    type: select
+  - name: entry.352736124
+    type: text
     label: City
-    options:
-      - value: karachi
-        text: Karachi
-      - value: lahore
-        text: Lahore
-      - value: islamabad
-        text: Islamabad
