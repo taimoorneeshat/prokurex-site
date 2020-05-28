@@ -99,9 +99,10 @@
 }
 
 $primary: #30ae96;
-$body-bg: $light;
+$body-bg: #f8f9fa;
+// $font-family-base: 'Axiforma';
 
-@import "../_sass/bootstrap/bootstrap";
+@import '../_sass/bootstrap/bootstrap';
 
 /* homepage 3 */
 .gradient-banner {
