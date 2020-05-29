@@ -113,23 +113,16 @@ $font-weight-base: 200;
 }
 
 .banner-content {
-  margin: 6rem 0;
+  margin: 6rem auto;
+  color: $light;
+  text-align: center;
 }
 
 .banner-header {
   position: relative;
   margin: 0 auto 1rem auto;
-  padding: 0 0.5rem;
-  text-align: center;
-  color: $light;
   font-weight: bold;
   text-transform: capitalize;
-}
-
-@media only screen and (max-width: 880px) and (min-width: 650px) {
-  .banner-header {
-    padding: 0 6rem;
-  }
 }
 
 .gradient-banner::before {
