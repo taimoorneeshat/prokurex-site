@@ -30,11 +30,8 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            {% for item in site.data.nav %}
-            <li class="nav-item {% if page.url == item.url %} active {% endif %}">
-                <a class="nav-link" href="{{ item.url | prepend: site.baseurl }}">{{ item.title }} {% if page.url == item.url %} <span class="sr-only">(current)</span> {% endif %}</a>
-            </li>
-            {% endfor %}
+          <li class="nav-item"><a class="nav-link" href="{{ '/#benefits' | prepend: site.baseurl }}">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ '/#process' | prepend: site.baseurl }}">How it Works</a></li>
         </ul>
       </div>
 
