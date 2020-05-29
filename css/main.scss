@@ -107,9 +107,29 @@ $font-weight-base: 200;
 
 /* homepage 3 */
 .gradient-banner {
-  padding: 100px 0 170px;
+  padding: 0 0 100px;
   position: relative;
   overflow: hidden;
+}
+
+.banner-content {
+  margin: 6rem 0;
+}
+
+.banner-header {
+  position: relative;
+  margin: 0 auto 1rem auto;
+  padding: 0 0.5rem;
+  text-align: center;
+  color: $light;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 880px) and (min-width: 650px) {
+  .banner-header {
+    padding: 0 6rem;
+  }
 }
 
 .gradient-banner::before {
