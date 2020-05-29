@@ -3,31 +3,37 @@
   image: /images/benefits/office-supplies.png
   pointers:
     - text: >
-        We are constantly striving to find the best quality of products at a fair price not just 
-        from local distributors but also from manufacturers around the world. So you never have to 
-        worry about requesting quotations from multiple vendors or be doubtful about the quality of 
-        products. Without aanyone from your team spending a single minute on bargaining you are 
-        guaranted to get the best price at all times.
+        Never worry about requesting quotations from multiple vendors or be doubtful about
+        quality. We are constantly striving to find the best quality of products at a fair 
+        price so without wasting a single minute on bargaining you are guaranteed to get 
+        the best price.
+# We are constantly striving to find the best quality of products at a fair price not just 
+# from local distributors but also from manufacturers around the world. So you never have to 
+# worry about requesting quotations from multiple vendors or be doubtful about the quality of 
+# products. Without aanyone from your team spending a single minute on bargaining you are 
+# guaranted to get the best price at all times.
 - header: Achieve greater visbility into your business spend
   reverse: true
   image: /images/benefits/track-spending.png
   pointers:
     - text: >
-        We believe an organization can only succeed when it is completely aware of how it spends. 
-        Almost all organizations are well aware of their biggest purchases but it is the smaller 
-        recurring purchases that are difficult to track. And because of this difficulty they are 
-        often underestimated.
-        With our admin dashboard you can keep track ofeven the smallest purchase. Monthly reports 
-        provide you with a detailed analysis of how all the money gets spent.
-        Set budget on categories and organizational departments.
-        Track purchases accros your organization.
-        Achieve greater budget control through transparent spending
-- header: Create a more inspiring workspace for your team
+        Stop wondering about how all the cash was spent so quickly. With our Admin Dashboard 
+        you can now keep track of even the smallest purchase and control spending across the 
+        organization with approvals and budgets. Generate monthly reports with detailed 
+        analysis and use insights to take swift action.
+# The smallest frequent purchases often build up to huge totals yet they remain the most difficult to track.
+# We believe an organization can only succeed when it is completely aware of how it spends. 
+# Almost all organizations are well aware of their biggest purchases but it is the smaller 
+# recurring purchases that are difficult to track. And because of this difficulty they are 
+# often underestimated.
+# Set budget on categories and organizational departments.
+# Achieve greater budget control through transparent spending
+- header: Create a more productive space for your team # Create an inspiring workspace for your team
   reverse: false
   image: /images/benefits/save-time.png
   pointers:
     - text: >
-        By making sure your office is always with the best tools out there, they are
-        are always ready to tackle any challenge that comes their way. Why let a broken stapler 
-        be a hinderance when it can be replaced with just a click of button or why let a craving 
-        pull you away from your work when you can have all the snacks you want already at your office.
+        Does your team go out for finding snacks too often? Do you run out of stapler pins 
+        at the worst moments? These daily inconveniences can hinder your productivity so 
+        we make sure you always have your favorite snacks and best tools available. Dont 
+        let any cravings go unsatisfied and still be ready to tackle any challenge.
